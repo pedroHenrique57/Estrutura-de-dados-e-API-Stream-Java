@@ -2,23 +2,23 @@ package edu.DataAndAPIStream.EncadeamentoDeNo;
 
 public class No<T> {
 
-    private T conteudo;
+    private T dado;
     private No<T> proximoNo;
 
-    public No(T conteudo) {
+    public No(T dado) {
         this.proximoNo = null;
-        this.conteudo = conteudo;
+        this.dado = dado;
     }
 
-    public T getConteudo() {
-        return conteudo;
+    public T getdado() {
+        return dado;
     }
 
-    public void setConteudo(T conteudo) {
-        this.conteudo = conteudo;
+    public void setdado(T dado) {
+        this.dado = dado;
     }
 
-    public No getProximoNo() {
+    public No<T> getProximoNo() {
         return proximoNo;
     }   
 
@@ -29,7 +29,7 @@ public class No<T> {
     @Override
     public String toString() {
         return "No{" +
-                "conteudo=" + conteudo +
+                "dado=" + dado +
                 '}';
     }
 }
