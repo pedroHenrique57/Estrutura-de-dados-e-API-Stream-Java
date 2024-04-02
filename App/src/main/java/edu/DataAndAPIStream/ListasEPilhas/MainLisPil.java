@@ -36,5 +36,7 @@ public class MainLisPil {
         System.out.println(fila.dequeue());
 
         System.out.println(fila);
+
+        System.out.println(fila.first());
     }
 }

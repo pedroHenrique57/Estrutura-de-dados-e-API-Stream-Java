@@ -19,16 +19,17 @@ public class Fila<T> {
     refDeEntrada = novoNo;
   }
 
-  public No<T> first() {
-    if (this.isEmpty()) {
+  public T first() {
+    if (!this.isEmpty()) {
       No<T> primeiroNo = refDeEntrada;
       while (true) {
-        if (primeiroNo.getdado() != null) {
+        if (primeiroNo.getProximoNo() != null) {
           primeiroNo = primeiroNo.getProximoNo();
         } else {
           break;
         }
       }
+      return (T) primeiroNo.getdado();
     }
     return null;
   }
