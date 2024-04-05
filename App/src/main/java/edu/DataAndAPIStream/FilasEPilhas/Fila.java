@@ -1,4 +1,4 @@
-package edu.DataAndAPIStream.ListasEPilhas;
+package edu.DataAndAPIStream.FilasEPilhas;
 
 import edu.DataAndAPIStream.EncadeamentoDeNo.No;
 
